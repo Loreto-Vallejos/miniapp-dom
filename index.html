@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miniapp DOM</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Generador de Usuarios</h1>
+        <button id="btn-dark">🌙 Modo Oscuro</button>
+    </header>
+    <main>
+
+        <section class="form-section">
+            <label>Nombre personalizado:</label>
+            <input id="input-name" type="text" placeholder="Escribe un nombre..." />
+            <small id="name-msg"></small>
+            <button id="btn-add">Agregar Usuario</button>
+            <button id="btn-fetch">Cargar Usuario Aleatorio</button>
+        </section>
+
+        <!-- Contenedor de tarjetas -->
+        <section id="cards-container"></section>
+
+        <!-- TEMPLATE -->
+        <template id="card-template">
+            <article class="card fade-in">
+                <img class="avatar" />
+                <h3 class="nombre"></h3>
+                <p class="email"></p>
+                <button class="btn-delete">Eliminar</button>
+            </article>
+        </template>
+        
+        </main>
+    <script src="app.js"></script>
+</body>
+</html>
